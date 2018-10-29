@@ -1,0 +1,1389 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script> 
+
+<style>
+body{
+background-image: url('https://i.imgur.com/PueqLo9.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+background-attachment:fixed;
+background-color:#7B7462;
+}
+
+::-webkit-scrollbar {width: 6px; height: 6px;}
+::-webkit-scrollbar-track {background: #7B7462;}
+::-webkit-scrollbar-thumb {background: #3F3826;}
+
+#bigbox {
+position:absolute;
+background-color:rgba(63, 56, 38, 0.59);
+width:50%;
+height:219%;
+left:25%;
+top:5%;
+}
+
+#basicholder {
+position:absolute;
+background-color:#e6e6e6;
+width:48%;
+height:30%;
+left:26%;
+top:7%;
+background-image: url('https://i.imgur.com/R9tePQF.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+}
+
+#nametitle {
+position:absolute;
+background-color:#696969;
+width:4%;
+height:3%;
+top:9%;
+left:27%;
+text-align:center;
+font-family: 'Amatic SC', cursive;
+font-size:2vh;
+color:#FFFFFF;
+line-height:1.5;
+letter-spacing:4px;
+}
+
+#name {
+position:absolute;
+background-color:#9e9e9e;
+width:6%;
+height:3%;
+top:9%;
+left:31%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:2;
+}
+
+#agetitle {
+position:absolute;
+background-color:#696969;
+width:4%;
+height:3%;
+top:14%;
+left:27%;
+text-align:center;
+font-family: 'Amatic SC', cursive;
+font-size:2vh;
+color:#FFFFFF;
+line-height:1.5;
+letter-spacing:4px;
+}
+
+#age {
+position:absolute;
+background-color:#9e9e9e;
+width:6%;
+height:3%;
+top:14%;
+left:31%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:2;
+}
+
+#birthdaytitle {
+position:absolute;
+background-color:#696969;
+width:4%;
+height:3%;
+top:19%;
+left:27%;
+text-align:center;
+font-family: 'Amatic SC', cursive;
+font-size:2vh;
+color:#FFFFFF;
+line-height:1.5;
+letter-spacing:4px;
+}
+
+#birthdate {
+position:absolute;
+background-color:#9e9e9e;
+width:6%;
+height:3%;
+top:19%;
+left:31%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:2;
+}
+
+#gendertitle {
+position:absolute;
+background-color:#696969;
+width:4%;
+height:3%;
+top:24%;
+left:27%;
+text-align:center;
+font-family: 'Amatic SC', cursive;
+font-size:2vh;
+color:#FFFFFF;
+line-height:1.5;
+letter-spacing:3px;
+}
+
+#gender {
+position:absolute;
+background-color:#9e9e9e;
+width:6%;
+height:3%;
+top:24%;
+left:31%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:2;
+}
+
+#racetitle {
+position:absolute;
+background-color:#696969;
+width:4%;
+height:3%;
+top:29%;
+left:27%;
+text-align:center;
+font-family: 'Amatic SC', cursive;
+font-size:2vh;
+color:#FFFFFF;
+line-height:1.5;
+letter-spacing:4px;
+}
+
+#race {
+position:absolute;
+background-color:#9e9e9e;
+width:6%;
+height:3%;
+top:29%;
+left:31%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:2;
+}
+
+#lace1 {
+position:absolute;
+width:10%;
+height:1%;
+top:34%;
+left:27%;
+background-image: url('https://i.imgur.com/egjYW2o.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#lace2 {
+position:absolute;
+width:17%;
+height:1%;
+top:34%;
+left:56%;
+background-image: url('https://i.imgur.com/egjYW2o.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#basicpic {
+position:absolute;
+background-color:#9e9e9e;
+width:17%;
+height:26%;
+top:9%;
+left:38%;
+background-image: url('https://i.imgur.com/PCfSjbh.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#details{
+position:absolute;
+background-color:#9e9e9e;
+padding:2%;
+overflow:auto;
+width:13%;
+height:15%;
+top:9%;
+left:56%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#gallery {
+position:absolute;
+background-color:#7B7462;
+width:48%;
+height:35%;
+left:26%;
+top:37%;
+}
+
+#pic1 {
+position:absolute;
+background-color:#A39C8A;
+height:35%;
+width:15%;
+left:26%;
+top:37%;
+background-image: url('https://i.imgur.com/gitSXCZ.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic1:hover {
+background-image: url('https://i.imgur.com/IfxlDpC.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic2 {
+position:absolute;
+background-color:#9e9e9e;
+height:35%;
+width:18%;
+left:41%;
+top:37%;
+background-image: url('https://i.imgur.com/ilWlZir.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic2:hover {
+background-image: url('https://i.imgur.com/sXnReQH.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic3 {
+position:absolute;
+background-color:#A39C8A;
+height:35%;
+width:15%;
+left:59%;
+top:37%;
+background-image: url('https://i.imgur.com/73t6VQX.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic3:hover {
+background-image: url('https://i.imgur.com/m6AlLay.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#backstoryholder {
+position:absolute;
+background-color:#e6e6e6;
+width:48%;
+height:30%;
+left:26%;
+top:72%;
+background-image: url('https://i.imgur.com/R9tePQF.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+}
+
+#backstory {
+position:absolute;
+background-color:#9e9e9e;
+width:32%;
+height:26%;
+top:74%;
+left:27%;
+}
+
+#backstorypic {
+position:absolute;
+width:35%;
+height:100%;
+top:0%;
+left:0%;
+}
+
+#backstorytext {
+position:absolute;
+padding:2%;
+overflow:auto;
+width:61%;
+height:89%;
+top:0%;
+left:35%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#historytab1 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:74%;
+left:60%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#historytab2 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:81.25%;
+left:60%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#historytab3 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:88.75%;
+left:60%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#historytab4 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:96%;
+left:60%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#historytab1:hover, #historytab2:hover, #historytab3:hover, #historytab4:hover {
+background-color:#9e9e9e;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#relationsholder {
+position:absolute;
+background-color:#7B7462;
+width:48%;
+height:40%;
+left:26%;
+top:102%;
+background-image: url('https://i.imgur.com/yPibqRo.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important;
+}
+
+#friend1 {
+position:absolute;
+background-color:#67604E;
+width:14%;
+height:12%;
+top:104%;
+left:27%;
+}
+
+#friend2 {
+position:absolute;
+background-color:#67604E;
+width:14%;
+height:12%;
+top:118%;
+left:27%;
+}
+
+#friend3 {
+position:absolute;
+background-color:#67604E;
+width:14%;
+height:12%;
+top:104%;
+left:43%;
+}
+
+#friend4 {
+position:absolute;
+background-color:#67604E;
+width:14%;
+height:12%;
+top:118%;
+left:43%;
+}
+
+#friend5 {
+position:absolute;
+background-color:#67604E;
+width:14%;
+height:12%;
+top:104%;
+left:59%;
+}
+
+#friend6 {
+position:absolute;
+background-color:#67604E;
+width:14%;
+height:12%;
+top:118%;
+left:59%;
+}
+
+#ficon {
+position:absolute;
+background-color:#7B7462;
+width:20%;
+height:45%;
+top:4%;
+left:78%;
+}
+
+#friendname {
+position:absolute;
+background-color:#7B7462;
+width:74%;
+height:20%;
+top:4%;
+left:2%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:1.5;
+}
+
+#friendrelation {
+position:absolute;
+background-color:#7B7462;
+width:74%;
+height:20%;
+top:28.5%;
+left:2%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:1.5;
+letter-spacing:3px;
+}
+
+#friendthoughts {
+position:absolute;
+width:96%;
+height:43%;
+top:53%;
+left:2%;
+font-family: 'Amatic SC', cursive;
+font-size:2vh;
+color:#CCCCCC;
+}
+
+#inventoryholder {
+position:absolute;
+background-color:#e6e6e6;
+width:48%;
+height:30%;
+left:26%;
+top:132%;
+background-image: url('https://i.imgur.com/R9tePQF.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+}
+
+#inventorytab1 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:134%;
+left:27%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#inventorytab2 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:141.25%;
+left:27%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#inventorytab3 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:148.75%;
+left:27%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#inventorytab4 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:156%;
+left:27%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#inventorytab1:hover, #inventorytab2:hover, #inventorytab3:hover, #inventorytab4:hover {
+background-color:#9e9e9e;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#inventory {
+position:absolute;
+background-color:#9e9e9e;
+width:32%;
+height:26%;
+top:134%;
+left:41%;
+}
+
+#inventorytext {
+position:absolute;
+padding:2%;
+overflow:auto;
+width:96%;
+height:89%;
+top:0%;
+left:0%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#primarytree {
+position:absolute;
+background-color:#7B7462;
+width:48%;
+height:30%;
+left:26%;
+top:162%;
+background-image: url('https://i.imgur.com/8SylmoR.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+}
+
+#primarytreebox1 {
+position:absolute;
+background-color:rgba(63, 56, 38, 0.59);
+width:16.5%;
+height:26%;
+top:164%;
+left:27%;
+}
+
+#primarytreebox2 {
+position:absolute;
+background-color:rgba(63, 56, 38, 0.59);
+width:20%;
+height:26%;
+top:164%;
+left:53%;
+}
+
+#conjuration {
+position:absolute;
+background-color:#7B7462;
+padding:1%;
+overflow:auto;
+width:12.5%;
+height:17.5%;
+top:166%;
+left:28%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#conjurationspells {
+position:absolute;
+background-color:#7B7462;
+padding:1%;
+overflow:auto;
+width:16%;
+height:17.5%;
+top:166%;
+left:54%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#spelltabbox1 {
+position:absolute;
+background-color:#67604E;
+width:1%;
+height:26%;
+top:164%;
+left:45.5%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox2 {
+position:absolute;
+background-color:#67604E;
+width:1%;
+height:26%;
+top:164%;
+left:47%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox3 {
+position:absolute;
+background-color:#67604E;
+width:1%;
+height:26%;
+top:164%;
+left:48.5%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox4 {
+position:absolute;
+background-color:#67604E;
+width:1%;
+height:26%;
+top:164%;
+left:50%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox5 {
+position:absolute;
+background-color:#67604E;
+width:1%;
+height:26%;
+top:164%;
+left:51.5%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox1:hover, #spelltabbox2:hover, #spelltabbox3:hover, #spelltabbox4:hover, #spelltabbox5:hover {
+background-color:#7B7462;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#secondarytree {
+position:absolute;
+background-color:#e6e6e6;
+width:48%;
+height:30%;
+left:26%;
+top:192%;
+background-image: url('https://i.imgur.com/0p1oSTe.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:bottom !important; 
+}
+
+#secondarytreebox1 {
+position:absolute;
+background-color:rgba(105, 105, 105, 0.59);
+width:16.5%;
+height:26%;
+top:194%;
+left:27%;
+}
+
+#secondarytreebox2 {
+position:absolute;
+background-color:rgba(105, 105, 105, 0.59);
+width:20%;
+height:26%;
+top:194%;
+left:53%;
+}
+
+#bardism {
+position:absolute;
+background-color:#9e9e9e;
+padding:1%;
+overflow:auto;
+width:12.5%;
+height:17.5%;
+top:196%;
+left:28%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#bardismspells {
+position:absolute;
+background-color:#9e9e9e;
+padding:1%;
+overflow:auto;
+width:16%;
+height:17.5%;
+top:196%;
+left:54%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#spelltabbox6 {
+position:absolute;
+background-color:#696969;
+width:1%;
+height:26%;
+top:194%;
+left:45.5%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox7 {
+position:absolute;
+background-color:#696969;
+width:1%;
+height:26%;
+top:194%;
+left:47%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox8 {
+position:absolute;
+background-color:#696969;
+width:1%;
+height:26%;
+top:194%;
+left:48.5%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox9 {
+position:absolute;
+background-color:#696969;
+width:1%;
+height:26%;
+top:194%;
+left:50%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox10 {
+position:absolute;
+background-color:#696969;
+width:1%;
+height:26%;
+top:194%;
+left:51.5%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox6:hover, #spelltabbox7:hover, #spelltabbox8:hover, #spelltabbox9:hover, #spelltabbox10:hover {
+background-color:#9e9e9e;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bottombuffer {
+position:absolute;
+width:50%;
+height:5%;
+left:25%;
+top:223%;
+}
+
+.tabs{
+display:inline-block;
+width:100%;
+height:100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18,#tab19,#tab20,#tab21,#tab22 {
+display: none;
+}
+
+h1 {
+color:#EAEAEA;
+font-family: 'Amatic SC', cursive;
+border-bottom:1px solid #333333;
+text-align:center;
+font-size:2vh;
+line-height:0;
+}
+
+i {
+color:#333333;
+}
+
+a {
+color:#666666;
+text-decoration:none;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#FFFFFF;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+b {
+color:#FFFFFF;
+background-color:#666666;
+text-transform:uppercase;
+}
+</style>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|BenchNine" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('backstorytext').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('backstorypic').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('inventorytext').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation3(id) {document.getElementById('conjurationspells').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation4(id) {document.getElementById('bardismspells').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="bigbox"></div>
+
+<div id="basicholder"></div>
+<div id="nametitle">
+Name
+</div>
+<div id="name">
+Carlotta Voltolini
+</div>
+<div id="agetitle">
+Age
+</div>
+<div id="age">
+Early Thirties
+</div>
+<div id="birthdaytitle">
+D.O.B.
+</div>
+<div id="birthdate">
+January 12th
+</div>
+<div id="gendertitle">
+Gender
+</div>
+<div id="gender">
+Cisgender Female
+</div>
+<div id="racetitle">
+Race
+</div>
+<div id="race">
+Human, Italian
+</div>
+<div id="lace1"></div>
+<div id="basicpic"></div>
+<div id="details">
+<h1>Appearance</h1>
+While she is pretty average in .. uh.. feminine attributes, her defined hourglass figure does a fine job proving she's female on its own. Very dark brown--almost black--hair falls down to her mid-back in gentle waves, framing an oval shaped face with delicate features. Pronounced cheekbones, a little slightly upturned button nose, full pink lips, and dark blue eyes. She's often found wearing pastels and pale colors, making her look a little darker than she really is. 
+<br>
+<h1>Personality</h1>
+To those whose company she enjoys, she's very charismatic and open minded, often showering her friends and loved ones in affection. She's a good listener but can also speak her own mind if the need arises. To those she doesn't like very much she can be snarky and sassy, using dry humor to get under their skin. Those people aren't very common, though, considering she's quite the people person and generally adores strangers long before they're her friends.
+</div>
+<div id="lace2"></div>
+
+<div id="gallery"></div>
+<div id="pic1"></div>
+<div id="pic2"></div>
+<div id="pic3"></div>
+
+<div id="backstoryholder"></div>
+<div id="backstory">
+<div id="backstorypic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/c6ydtoL.png"/>
+</div>
+<div id="backstorytext">
+<h1>The Voltolini Legacy</h1>
+</div>
+</div>
+<div id="historytab1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">The Voltolini Legacy</span>
+</div>
+<div id="historytab2">
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">Childhood</span>
+</div>
+<div id="historytab3">
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">Discovery of Magic</span>
+</div>
+<div id="historytab4">
+<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">Present Times</span>
+</div>
+<div id="tab1">
+<h1>The Voltolini Legacy</h1>
+</div>
+<div id="tab2">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/c6ydtoL.png"/>
+</div>
+<div id="tab3">
+<h1>Childhood</h1>
+</div>
+<div id="tab4">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/xttOP91.png"/>
+</div>
+<div id="tab5">
+<h1>Discovery of Magic</h1>
+</div>
+<div id="tab6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/lpsXSFC.png"/>
+</div>
+<div id="tab7">
+<h1>Present Times</h1>
+</div>
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/zL0r0Dv.jpg"/>
+</div>
+
+<div id="relationsholder"></div>
+<div id="friend1">
+<div id="ficon">
+<a title="Drummer" target="_blank" href="http://drummer.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/d/r/drummer/thumb.jpg"/></a>
+</div>
+<div id="friendname">
+??? Voltolini
+</div>
+<div id="friendrelation">
+Husband
+</div>
+<div id="friendthoughts">
+Work in progress.
+</div>
+</div>
+<div id="friend2">
+<div id="ficon">
+<a title="???" target="_blank" href="http://chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/d/r/drummer/thumb.jpg"/></a>
+</div>
+<div id="friendname">
+Nicola Voltolini
+</div>
+<div id="friendrelation">
+Son
+</div>
+<div id="friendthoughts">
+Work in progress.
+</div>
+</div>
+<div id="friend3">
+<div id="ficon">
+<a title="Violinist" target="_blank" href="http://violinist.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/v/i/violinist/thumb.jpg"/></a>
+</div>
+<div id="friendname">
+Nella O'Connor
+</div>
+<div id="friendrelation">
+Sister
+</div>
+<div id="friendthoughts">
+"Quiet but by no means timid, my little sister is full if silent fire. A true Voltolini woman."
+</div>
+</div>
+<div id="friend4">
+<div id="ficon">
+<a title="Guitarist" target="_blank" href="http://guitarist.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/g/u/guitarist/thumb.jpg"/></a>
+</div>
+<div id="friendname">
+Ryan O'Connor
+</div>
+<div id="friendrelation">
+Brother (In-Law)
+</div>
+<div id="friendthoughts">
+"Hot blooded with a stupid grin, typical O'Connor. Could do better, but she loves him."
+</div>
+</div>
+<div id="friend5">
+<div id="ficon">
+<img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/v/i/violist/thumb.jpg"/>
+</div>
+<div id="friendname">
+???
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="friendthoughts">
+"???"
+</div>
+</div>
+<div id="friend6">
+<div id="ficon">
+<img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/v/i/violist/thumb.jpg"/>
+</div>
+<div id="friendname">
+???
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="friendthoughts">
+"???"
+</div>
+</div>
+
+<div id="inventoryholder"></div>
+<div id="inventorytab1">
+<span class="tabs" onClick="changeNavigation2 ('tab9')">Basic Items</span>
+</div>
+<div id="inventorytab2">
+<span class="tabs" onClick="changeNavigation2 ('tab10')">Magic Items</span>
+</div>
+<div id="inventorytab3">
+<span class="tabs" onClick="changeNavigation2 ('tab11')">Conjuration Medium</span>
+</div>
+<div id="inventorytab4">
+<span class="tabs" onClick="changeNavigation2 ('tab12')">Bardism Medium</span>
+</div>
+<div id="inventory">
+<div id="inventorytext">
+<h1>Basic Items</h1>
+Work in progress. 
+</div>
+</div>
+<div id="tab9">
+<h1>Basic Items</h1>
+Work in progress.
+</div>
+<div id="tab10">
+<h1>Magic Items</h1>
+<img align="right" style="width:30%;" src="https://media.giphy.com/media/F3F8RBo3achyw/giphy.gif"/>
+Work in progress.
+</div>
+<div id="tab11">
+<h1>Photokinetics High Duomancer Medium</h1>
+Work in progress.
+</div>
+<div id="tab12">
+<h1>Bardism High Duomancer Medium</h1>
+Work in progress.
+</div>
+
+<div id="primarytree"></div>
+<div id="primarytreebox1"></div>
+<div id="conjuration">
+<h1>Photokinetics: High Duomancer</h1>
+<i>"Users of Radiance must choose between the ultimate duality; to manipulate the light itself, or manifest their power through the darkness of shadows. Light Radiance, or Photokinesis is primarily concerned with creating bright and powerful energy based attacks. [...] Although light radiance is primarily focused on energy, a Photokinetics mage who reaches the rank of expert mage may utilize hardlight, a physical representation of light mana that can create hard hitting weaponry or solid barriers of defense."</i>
+</div>
+<div id="primarytreebox2"></div>
+<div id="conjurationspells">
+<h1>Paige Spells</h1>
+Work in progress.
+</div>
+<div id="spelltabbox1">
+<span class="tabs" onClick="changeNavigation3 ('tab13')">Paige</span>
+</div>
+<div id="spelltabbox2">
+<span class="tabs" onClick="changeNavigation3 ('tab14')">Mage</span>
+</div>
+<div id="spelltabbox3">
+<span class="tabs" onClick="changeNavigation3 ('tab15')">Expert Mage</span>
+</div>
+<div id="spelltabbox4">
+<span class="tabs" onClick="changeNavigation3 ('tab16')">Duomancer</span>
+</div>
+<div id="spelltabbox5">
+<span class="tabs" onClick="changeNavigation3 ('tab17')">High Duomancer</span>
+</div>
+<div id="tab13">
+<h1>Paige Spells</h1>
+Work in progress.
+</div>
+<div id="tab14">
+<h1>Mage Spells</h1>
+Work in progress.
+</div>
+<div id="tab15">
+<h1>Expert Mage Spells</h1>
+Work in progress.
+</div>
+<div id="tab16">
+<h1>Duomancer Spells</h1>
+Work in progress.
+</div>
+<div id="tab17">
+<h1>High Duomancer Spells</h1>
+Work in progress.
+</div>
+
+<div id="secondarytree"></div>
+<div id="secondarytreebox1"></div>
+<div id="bardism">
+<h1>Bardism: Duomancer</h1>
+<i>"Although music is a beautiful expression of art, the proper mage may cause it to become something much more. Bard's have the ability to convert music into powerful spells, focused primarily on buffing and (slight) healing. However, at higher levels Bardism can certainly do heavy damage, with a particular strength in sound based attacks."</i>
+</div>
+<div id="secondarytreebox2"></div>
+<div id="bardismspells">
+<h1>Paige Spells</h1>
+Work in progress.
+</div>
+<div id="spelltabbox6">
+<span class="tabs" onClick="changeNavigation4 ('tab18')">Paige</span>
+</div>
+<div id="spelltabbox7">
+<span class="tabs" onClick="changeNavigation4 ('tab19')">Mage</span>
+</div>
+<div id="spelltabbox8">
+<span class="tabs" onClick="changeNavigation4 ('tab20')">Expert Mage</span>
+</div>
+<div id="spelltabbox9">
+<span class="tabs" onClick="changeNavigation4 ('tab21')">Duomancer</span>
+</div>
+<div id="spelltabbox10">
+<span class="tabs" onClick="changeNavigation4 ('tab22')">High Duomancer</span>
+</div>
+<div id="tab18">
+<h1>Paige Spells</h1>
+Work in progress.
+</div>
+<div id="tab19">
+<h1>Mage Spells</h1>
+Work in progress.
+</div>
+<div id="tab20">
+<h1>Expert Mage Spells</h1>
+Work in progress. 
+</div>
+<div id="tab21">
+<h1>Duomancer Spells</h1>
+Work in progress.
+</div>
+<div id="tab22">
+<h1>High Duomancer Spells</h1>
+Work in progress.
+</div>
+
+<div id="bottombuffer"></div>
+
+<embed style="height: 0%; width: 0%;"src="Carlotta.mp3" autostart="true" loop="true">
